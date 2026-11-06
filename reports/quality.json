@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-11-06T12:49:09Z",
+  "table_counts": {
+    "problem": 8202,
+    "problem_source_identity": 8202,
+    "problem_content": 15216,
+    "problem_example": 33847,
+    "problem_hint": 10880,
+    "tag": 515,
+    "problem_tag": 39092,
+    "starter_code": 61386,
+    "asset": 3484,
+    "content_asset": 6499,
+    "source_record": 11116,
+    "content_provenance": 15216,
+    "content_revision": 15216,
+    "import_batch": 1,
+    "data_issue": 8632
+  },
+  "issues": {
+    "content_conflict": 2950,
+    "difficulty_conflict": 1,
+    "identity_field_mismatch": 4103,
+    "paid_statement_absent": 789,
+    "statement_missing": 789
+  },
+  "suspected_implementations": 0,
+  "editorial_markers_in_statements": 0,
+  "normalize_failures": 0,
+  "normalize_failure_reasons": {},
+  "foreign_key_check": 0
+}

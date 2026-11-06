@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-11-06T12:49:09Z",
+  "problems": 8202,
+  "by_category": {
+    "algorithm": 3683,
+    "concurrency": 18,
+    "database": 646,
+    "javascript": 134,
+    "pandas": 30,
+    "shell": 8,
+    "unknown": 3683
+  },
+  "by_difficulty": {
+    "easy": 1950,
+    "hard": 1974,
+    "medium": 4278
+  },
+  "current_content_by_locale_site": {
+    "en:leetcode.com": 4101,
+    "zh-CN:leetcode.cn": 4101
+  },
+  "expected_leetcode_com_slugs": 4101,
+  "missing_from_leetcode_com": [],
+  "leetcode_com_slugs_not_in_api_snapshot": [],
+  "leetcode_com_slugs_not_in_api_snapshot_count": 0,
+  "statement_field_status": {
+    "extracted|extracted": 8073,
+    "extracted|partial": 129
+  },
+  "example_field_status": {
+    "extracted": 7860,
+    "not_extracted": 342
+  },
+  "hint_field_status": {
+    "confirmed_empty": 834,
+    "extracted": 2478,
+    "not_extracted": 4890
+  },
+  "starter_field_status": {
+    "extracted": 3312,
+    "not_extracted": 4890
+  },
+  "cross_site_candidates_pending": 4101,
+  "note": "Empty statement on a paid problem is source-not-provided. not_extracted on doocs hints and starter codes means this pipeline did not have a source field. confirmed_empty means the source field existed and was empty."
+}

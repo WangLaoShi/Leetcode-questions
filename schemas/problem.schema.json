@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.question-bank/schemas/problem.schema.json",
+  "title": "Question bank problem",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "identity",
+    "category",
+    "difficulty",
+    "is_paid_only",
+    "contents",
+    "tags",
+    "starter_codes",
+    "assets",
+    "sources"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "identity": {
+      "type": "object",
+      "required": ["platform", "site", "platform_question_id", "display_id", "slug", "url"],
+      "properties": {
+        "platform": {"type": "string", "minLength": 1},
+        "site": {"type": "string", "minLength": 1},
+        "platform_question_id": {"type": ["string", "null"], "minLength": 1},
+        "display_id": {"type": ["string", "null"], "minLength": 1},
+        "slug": {"type": ["string", "null"], "minLength": 1},
+        "url": {"type": ["string", "null"]}
+      }
+    },
+    "category": {
+      "type": ["string", "null"],
+      "enum": ["algorithm", "database", "shell", "concurrency", "javascript", "pandas", null]
+    },
+    "difficulty": {
+      "type": ["string", "null"],
+      "enum": ["easy", "medium", "hard", null]
+    },
+    "is_paid_only": {"type": ["boolean", "null"]},
+    "raw": {"type": "object"},
+    "contents": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/content"}
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "code", "name"],
+        "properties": {
+          "source": {"type": "string"},
+          "code": {"type": "string"},
+          "name": {"type": "string"}
+        }
+      }
+    },
+    "starter_codes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["language", "template", "suspected_implementation"],
+        "properties": {
+          "language": {"type": "string"},
+          "language_name": {"type": "string"},
+          "template": {"type": "string"},
+          "suspected_implementation": {"type": "boolean"}
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["original_url"],
+        "properties": {
+          "original_url": {"type": "string"},
+          "alt": {"type": "string"},
+          "media_type": {"type": "string"}
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "path", "locator", "retrieved_at"],
+        "properties": {
+          "name": {"type": "string"},
+          "repo_url": {"type": "string"},
+          "git_commit": {"type": "string"},
+          "path": {"type": "string"},
+          "locator": {"type": "string"},
+          "retrieved_at": {"type": "string"},
+          "file_sha256": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "content": {
+      "type": "object",
+      "required": [
+        "locale",
+        "title",
+        "statement_markdown",
+        "constraints",
+        "follow_ups",
+        "examples",
+        "hints",
+        "type_specific",
+        "field_status",
+        "extraction_status"
+      ],
+      "properties": {
+        "locale": {"enum": ["en", "zh-CN"]},
+        "title": {"type": ["string", "null"]},
+        "statement_markdown": {"type": ["string", "null"]},
+        "statement_format": {"type": "string"},
+        "constraints": {"type": "array", "items": {"type": "string"}},
+        "follow_ups": {"type": "array", "items": {"type": "string"}},
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["ordinal"],
+            "properties": {
+              "ordinal": {"type": "integer"},
+              "input": {"type": ["string", "null"]},
+              "output": {"type": ["string", "null"]},
+              "explanation": {"type": ["string", "null"]},
+              "images": {"type": "array"}
+            }
+          }
+        },
+        "hints": {"type": "array", "items": {"type": "string"}},
+        "type_specific": {"type": "object"},
+        "field_status": {
+          "type": "object",
+          "additionalProperties": {
+            "enum": ["extracted", "confirmed_empty", "not_extracted", "not_applicable"]
+          }
+        },
+        "extraction_status": {"enum": ["extracted", "partial", "needs_review", "missing"]}
+      }
+    }
+  }
+}

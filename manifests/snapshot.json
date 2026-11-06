@@ -1,0 +1,101 @@
+{
+  "recorded_at": "2026-11-06T12:32:13Z",
+  "timezone": "UTC",
+  "encoding": "UTF-8",
+  "newline": "LF in normalized JSON strings",
+  "credentials_stored": false,
+  "sources": {
+    "neenza": {
+      "repo_url": "https://github.com/neenza/leetcode-problems",
+      "branch": "master",
+      "git_commit": "16c26d1bcfdc17a0290f7083e86c4e9387b2e248",
+      "git_commit_time": "2025-08-15T18:42:31+05:30",
+      "local_path": "F:\\Expert\\question-bank\\raw\\neenza\\repo",
+      "license_file": null,
+      "license_observed": "No LICENSE file in the repository snapshot.",
+      "coverage": "Per-problem JSON plus merged_problems.json. merged_problems.json duplicates problems/ and is not imported.",
+      "hashed_files": 2913,
+      "hash_list": "F:\\Expert\\question-bank\\manifests\\files\\neenza.jsonl"
+    },
+    "leetcode-api": {
+      "repo_url": "https://github.com/noworneverev/leetcode-api",
+      "branch": "main",
+      "git_commit": "193c15d2da6c6d9ad9c52f40cbbe9b015b77b377",
+      "git_commit_time": "2026-11-06T05:55:06Z",
+      "local_path": "F:\\Expert\\question-bank\\raw\\leetcode-api\\repo",
+      "license_file": "LICENSE",
+      "license_observed": "MIT, copyright 2025 Yan-Ying Liao. The MIT grant covers the repository software. The cached problem JSON is LeetCode content and is not treated as MIT-licensed merely because it sits in this repo.",
+      "coverage": "data/leetcode_questions.json is a GraphQL questionData cache for leetcode.com. data/leetcode_questions_mini.json is a list view. Live samples are under raw/leetcode-api/api-samples.",
+      "hashed_files": 4,
+      "hash_list": "F:\\Expert\\question-bank\\manifests\\files\\leetcode-api.jsonl"
+    },
+    "doocs": {
+      "repo_url": "https://github.com/doocs/leetcode",
+      "branch": "main",
+      "git_commit": "0a1150fd96a63241173004671338eb7554a0d378",
+      "git_commit_time": "2026-11-05T20:08:46+08:00",
+      "local_path": "F:\\Expert\\question-bank\\raw\\doocs\\repo",
+      "license_file": "LICENSE",
+      "license_observed": "CC BY-SA 4.0 on the repository. Sparse checkout kept LICENSE, root README, and solution/**/README.md plus README_EN.md only. Solution implementation files were not downloaded. CC BY-SA is not applied to upstream LeetCode statements.",
+      "coverage": "Chinese and English problem-description regions inside README files. Not an official leetcode.cn dump.",
+      "hashed_files": 8206,
+      "hash_list": "F:\\Expert\\question-bank\\manifests\\files\\doocs.jsonl"
+    }
+  },
+  "leetcode_api_live_samples": [
+    {
+      "method": "GET",
+      "url": "https://leetcode-api-pied.vercel.app/stats",
+      "params": {
+        "endpoint": "/stats"
+      },
+      "fetched_at": "2026-11-06T06:34:07.301259+00:00",
+      "http_status": 200,
+      "sha256": "06bdd0c5af3135d4f40b6a2a532fe4444c64288ab360ae8337c9396f55b1e7b5",
+      "bytes": 152,
+      "note": "Public API sample for field check. No credentials."
+    },
+    {
+      "method": "GET",
+      "url": "https://leetcode-api-pied.vercel.app/problem/two-sum",
+      "params": {
+        "endpoint": "/problem/{id_or_slug}",
+        "id_or_slug": "two-sum"
+      },
+      "fetched_at": "2026-11-06T06:34:07.301259+00:00",
+      "http_status": 200,
+      "sha256": "fff329c67651d7328c262d9dce4939e6a1d403b0e5e5d19d432138419fa4f7a1",
+      "bytes": 13489,
+      "note": "Public API sample for field check. No credentials."
+    }
+  ],
+  "scope": {
+    "platform": "leetcode",
+    "sites_in_snapshots": [
+      "leetcode.com",
+      "leetcode.cn (links published by doocs, not an official cn export)"
+    ],
+    "categories_expected_from_leetcode_api_cache": [
+      "Algorithms",
+      "Database",
+      "Shell",
+      "Concurrency",
+      "JavaScript",
+      "pandas"
+    ],
+    "languages_content": [
+      "en",
+      "zh-CN"
+    ],
+    "paid_content": "Import only text present in the public snapshots. Do not call LeetCode for missing premium statements. is_paid_only stays null when the source does not say.",
+    "excluded": [
+      "editorials",
+      "solution implementations",
+      "complexity writeups",
+      "user data",
+      "submission history"
+    ],
+    "completeness": "Complete means complete for these three snapshots, not every problem that has ever existed on LeetCode.",
+    "runtime_database": "SQLite, because PostgreSQL and MySQL clients are not installed. PostgreSQL DDL is still delivered."
+  }
+}

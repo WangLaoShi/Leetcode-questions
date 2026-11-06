@@ -1,0 +1,246 @@
+{
+  "generated_at": "2026-11-06T12:32:22Z",
+  "note": "Counts describe the snapshots on disk. Declared repository coverage is not treated as the live platform total.",
+  "sources": {
+    "neenza": {
+      "files": 2913,
+      "unique_slugs": 2913,
+      "duplicate_slugs": 0,
+      "merged_problems_json_bytes": 20339166,
+      "merged_problems_json_sha256": "fd3cbaae70638a148460b5982a2488f84201461a0979cd99e4b6b14991132090",
+      "merged_file_role": "aggregate duplicate of problems/; not imported",
+      "fields": {
+        "code_snippets": [
+          "object"
+        ],
+        "constraints": [
+          "array"
+        ],
+        "description": [
+          "string"
+        ],
+        "difficulty": [
+          "string"
+        ],
+        "examples": [
+          "array"
+        ],
+        "follow_ups": [
+          "array"
+        ],
+        "frontend_id": [
+          "string"
+        ],
+        "hints": [
+          "array"
+        ],
+        "problem_id": [
+          "string"
+        ],
+        "problem_slug": [
+          "string"
+        ],
+        "solution": [
+          "string"
+        ],
+        "title": [
+          "string"
+        ],
+        "topics": [
+          "array"
+        ]
+      },
+      "field_present_count": {
+        "title": 2913,
+        "problem_id": 2913,
+        "frontend_id": 2913,
+        "difficulty": 2913,
+        "problem_slug": 2913,
+        "topics": 2913,
+        "description": 2913,
+        "examples": 2913,
+        "constraints": 2913,
+        "follow_ups": 2913,
+        "hints": 2913,
+        "code_snippets": 2913,
+        "solution": 807
+      },
+      "difficulty": {
+        "Easy": 763,
+        "Medium": 1464,
+        "Hard": 686
+      },
+      "empty_title": 0,
+      "empty_description": 0,
+      "description_looks_html": 0,
+      "description_looks_markdown_or_text": 2913,
+      "rows_with_solution_field_excluded_from_import": 807,
+      "internal_id_differs_from_frontend_id": 2342,
+      "empty_hints": 820,
+      "empty_examples": 2,
+      "statement_format": "Mostly plain text or Markdown. Examples, constraints, follow-ups, and hints are separate fields. The description often omits example bodies.",
+      "category_field": false,
+      "is_paid_only_field": false
+    },
+    "leetcode-api": {
+      "file": "data/leetcode_questions.json",
+      "sha256": "6de93ef4154463736cdb5bd8773cba3a75785cab0271bbeb2ebf5b0baa44697e",
+      "bytes": 38819377,
+      "questions": 4101,
+      "duplicate_internal_ids": 0,
+      "duplicate_frontend_ids": 0,
+      "non_numeric_frontend_ids": 0,
+      "fields": {
+        "categoryTitle": [
+          "string"
+        ],
+        "codeSnippets": [
+          "array",
+          "null"
+        ],
+        "companyTags": [
+          "null"
+        ],
+        "content": [
+          "null",
+          "string"
+        ],
+        "difficulty": [
+          "string"
+        ],
+        "dislikes": [
+          "number"
+        ],
+        "hasSolution": [
+          "bool"
+        ],
+        "hasVideoSolution": [
+          "bool"
+        ],
+        "hints": [
+          "array",
+          "null"
+        ],
+        "isPaidOnly": [
+          "bool"
+        ],
+        "likes": [
+          "number"
+        ],
+        "questionFrontendId": [
+          "string"
+        ],
+        "questionId": [
+          "string"
+        ],
+        "similarQuestions": [
+          "string"
+        ],
+        "solution": [
+          "null",
+          "object"
+        ],
+        "stats": [
+          "string"
+        ],
+        "title": [
+          "string"
+        ],
+        "topicTags": [
+          "array"
+        ],
+        "url": [
+          "string"
+        ]
+      },
+      "field_present_count": {
+        "questionId": 4101,
+        "questionFrontendId": 4101,
+        "title": 4101,
+        "content": 4101,
+        "likes": 4101,
+        "dislikes": 4101,
+        "stats": 4101,
+        "similarQuestions": 4101,
+        "categoryTitle": 4101,
+        "hints": 4101,
+        "topicTags": 4101,
+        "companyTags": 4101,
+        "difficulty": 4101,
+        "isPaidOnly": 4101,
+        "codeSnippets": 4101,
+        "solution": 4101,
+        "hasSolution": 4101,
+        "hasVideoSolution": 4101,
+        "url": 4101
+      },
+      "category": {
+        "Algorithms": 3683,
+        "Database": 323,
+        "Shell": 4,
+        "Concurrency": 9,
+        "JavaScript": 67,
+        "pandas": 15
+      },
+      "difficulty": {
+        "Easy": 975,
+        "Medium": 2139,
+        "Hard": 987
+      },
+      "paid_only": 789,
+      "empty_content": 789,
+      "empty_content_equals_paid": true,
+      "empty_title": 0,
+      "missing_slug": 0,
+      "content_html": 3312,
+      "internal_id_differs_from_frontend_id": 3395,
+      "rows_with_solution_object_excluded_from_import": 2102,
+      "empty_hints": 1623,
+      "empty_code_snippets": 789,
+      "content_with_img": 741,
+      "statement_format": "HTML in question.content. Examples and constraints are inside the HTML, not separate fields. hints is a separate array. codeSnippets are starter templates. solution is an editorial object and is excluded.",
+      "live_api_note": "A public GET /problem/two-sum and GET /stats were saved under raw/leetcode-api/api-samples. The detail payload matches the unwrapped question object in the JSON cache, including a solution object that this pipeline drops. /stats total matched the cache count at sample time."
+    },
+    "doocs": {
+      "checkout": "sparse, depth 1, README and README_EN only",
+      "markdown_files": 8204,
+      "problem_readmes": 8202,
+      "non_problem_markdown": 2,
+      "locales": {
+        "zh-CN": 4101,
+        "en": 4101
+      },
+      "link_hosts_in_first_12kb": {
+        "leetcode.cn": 4101,
+        "leetcode.com": 4101
+      },
+      "front_matter_difficulty": {
+        "简单": 975,
+        "Easy": 975,
+        "中等": 2139,
+        "Medium": 2139,
+        "困难": 987,
+        "Hard": 987
+      },
+      "missing_description_markers_in_first_12kb": 8,
+      "starter_code_files_checked_out": 0,
+      "statement_format": "YAML front matter, then HTML inside <!-- description:start --> ... <!-- description:end -->. Solution sections sit after that marker and are not imported. Code fences inside the description are examples or schemas, not answers.",
+      "fields_observed": [
+        "front matter difficulty",
+        "front matter tags",
+        "title link",
+        "description HTML"
+      ],
+      "hints_field": false,
+      "official_internal_id": false
+    }
+  },
+  "gaps": [
+    "Neither snapshot contains a non-numeric display id (no LCP / 面试题 ids in these trees).",
+    "leetcode-api paid problems in this cache have empty statement HTML. Premium text was not requested.",
+    "neenza has no category and no is_paid_only field.",
+    "doocs sparse checkout has no starter templates and no official hint field. Hints are not taken from solution sections.",
+    "doocs Chinese pages link to leetcode.cn and are stored as a separate site until cross-site review.",
+    "Image binaries are referenced by URL and are not downloaded."
+  ]
+}

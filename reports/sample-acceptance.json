@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-06T12:35:43Z",
+  "checks": [
+    {
+      "name": "batch_counts_balance",
+      "ok": true,
+      "detail": {
+        "conflicts_isolated": 0,
+        "content_conflicts": 36,
+        "contents_inserted": 147,
+        "contents_revised": 0,
+        "contents_skipped": 0,
+        "failures": 0,
+        "problems_created": 74,
+        "problems_matched": 73,
+        "schema_failures": 0,
+        "seen": 147
+      }
+    },
+    {
+      "name": "no_dangling_foreign_keys",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "no_editorial_in_statements",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "two_sum_statement",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "two_sum_example_output",
+      "ok": true,
+      "detail": {
+        "output_text": "[0,1]",
+        "input_text": "nums = [2,7,11,15], target = 9"
+      }
+    },
+    {
+      "name": "two_sum_hints_on_current_version",
+      "ok": true,
+      "detail": 3
+    },
+    {
+      "name": "two_sum_python_template",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "two_sum_chinese_kept_on_cn_site",
+      "ok": true,
+      "detail": "两数之和"
+    },
+    {
+      "name": "sql_schemas_kept",
+      "ok": true,
+      "detail": 3
+    },
+    {
+      "name": "internal_id_differs_from_display_id",
+      "ok": true,
+      "detail": {
+        "platform_question_id": "772",
+        "display_id": "427"
+      }
+    },
+    {
+      "name": "paid_api_snapshot_not_backfilled",
+      "ok": true,
+      "detail": {
+        "source": "leetcode-api",
+        "extraction_status": "missing"
+      }
+    },
+    {
+      "name": "every_statement_has_provenance",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "sample_covers_available_categories",
+      "ok": true,
+      "detail": [
+        "algorithm",
+        "concurrency",
+        "database",
+        "javascript",
+        "pandas",
+        "shell"
+      ]
+    },
+    {
+      "name": "rerun_does_not_grow_rows",
+      "ok": true,
+      "detail": {
+        "stable": {
+          "problem": true,
+          "problem_source_identity": true,
+          "problem_content": true,
+          "problem_example": true,
+          "problem_hint": true,
+          "tag": true,
+          "problem_tag": true,
+          "starter_code": true,
+          "asset": true,
+          "content_asset": true,
+          "source_record": true,
+          "content_provenance": true,
+          "content_revision": true,
+          "data_issue": true
+        },
+        "skipped": 147
+      }
+    },
+    {
+      "name": "revision_keeps_old_statement_and_examples",
+      "ok": true,
+      "detail": [
+        {
+          "revision": 1,
+          "is_current": 0,
+          "statement_markdown": null,
+          "examples": 3
+        },
+        {
+          "revision": 2,
+          "is_current": 1,
+          "statement_markdown": null,
+          "examples": 3
+        }
+      ]
+    },
+    {
+      "name": "injected_failure_rolls_back_then_retries",
+      "ok": true,
+      "detail": {
+        "after_fail": 0,
+        "after_retry": 1,
+        "fail_status": "failed"
+      }
+    }
+  ],
+  "revision": {
+    "versions": 2
+  }
+}

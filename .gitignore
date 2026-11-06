@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+raw/
+backups/
+db/sample.sqlite
+db/fail-test.sqlite
+db/*.sqlite-wal
+db/*.sqlite-shm
