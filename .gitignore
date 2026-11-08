@@ -6,3 +6,4 @@ db/sample.sqlite
 db/fail-test.sqlite
 db/*.sqlite-wal
 db/*.sqlite-shm
+/server/node_modules
